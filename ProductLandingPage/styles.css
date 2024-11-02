@@ -1,0 +1,14 @@
+#header div{
+    overflow: hidden;
+    width: 40%;
+    height: 80px;
+}
+#header-img{
+    width: 300px;
+    margin: auto;
+    margin-top: -50px;
+}
+
+.fire-icon::before{
+    content: "\f06d";
+}

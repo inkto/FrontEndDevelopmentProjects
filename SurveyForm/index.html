@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>A Survey</title>
+  </head>
+  <body>
+    <h1 id="title">How did you like our house?</h1>
+    <p id="description">Please take 1 minute to fill in this survey for us so that we could provide you with better service in the future!</p>
+    <!-- action="" -->
+    <form id="survey-form" method="post" >
+      <label id="name-label" for="name">Name: </label>
+      <input required id="name" placeholder="enter your name" type="text" />
+      <label id="email-label" for="email">Email: </label>
+      <!-- 6. -->
+      <input required id="email" placeholder="example-email@123.com" type="email" />
+      <label id="number-label" for="number">Age: </label>
+      <input required id="number" placeholder="how old are you?" type="number" max="140" min="0"/>
+      
+      <div class="divider"></div>
+      <label for="dropdown">Where do you live now?</label>
+      <select id="dropdown" name="location">
+        <option value="">(select one)</option>
+        <option value="1">Earth obviously</option>
+        <option value="2">a cabbin house</option>
+      </select>
+      
+      <fieldset>
+        <legend>Is this you first time book with us?</legend>
+      <label for="new-customer" ><input id="new-customer" name="customer-type" type="radio" value="true" checked />Yes</label>
+      <label for="old-customer" ><input id="old-customer" name="customer-type" type="radio" value="false" />No</label>
+      </fieldset>
+<!--  -->
+      <fieldset>
+        <legend>What's your favorite part of the decoration?</legend>
+        <label for="table"><input id="table" type="checkbox" name="deco" value="1"/>Table</label>
+        <label for="garden"><input id="garden" type="checkbox" name="deco" value="2"/>Garden</label>
+        <label for="floor"><input id="floor" type="checkbox" name="deco" value="3"/>Floor</label>
+        <label for="window"><input id="window" type="checkbox" name="deco" value="4"/>Window</label>
+      </fieldset>
+
+      <label for="comment">Leave some words for us... </label>
+      <textarea id="comment" name="comment" row="5" col="10" placeholder="Do you have the same feeling about the big universe like me?"></textarea>
+      <!--  -->
+      <button id="submit">Finish</button>
+    </form>
+  </body>
+  <footer>
+    <p>See you in the star.</p>
+  </footer>
+</html>  

@@ -1,0 +1,96 @@
+*{
+    box-sizing:border-box;
+  }
+  
+  body{
+    background-image:url("https://www.nasa.gov/wp-content/uploads/2024/10/9460968490-6983cc09d1-o.jpg");
+    background-size:cover;
+    width:100%;
+    height:100vh;
+    margin:0;
+    padding-top:2em;
+    font-family: Tahoma;
+    color:#dfdfe2;
+  }
+  
+  h1, p{
+    text-align:center;
+    width:80%;
+    padding:5px 20px;
+    margin:0 auto;
+  }
+  
+  form{
+    width:80%;
+    max-width:600px;
+    min-width:200px;
+    margin:4em auto;
+    padding:20px;
+    padding-bottom: 1.5em;
+    background-color:rgba(123, 79, 8, 0.7);  
+    border-radius: 5px;
+  }
+  
+  label{
+    /* border:2px solid red; */
+    padding-left:2px;
+    display:block;
+  }
+  
+  input,
+  select,
+  textarea{
+    width:100%;
+    margin-top:6px;
+    margin-bottom:15px;
+    height: 2em;
+    font-size:16px;
+    padding: 5px;
+    /* background-color: #dfdfe2; */
+    border:none;
+    border-radius: 5px;
+  }
+  
+  fieldset{
+    margin: 10px 0;
+    border:none;
+    border-bottom: 2px solid #dfdfe2;
+  }
+  
+  .divider{
+    border-bottom:2px solid #dfdfe2;
+    margin:10px 0;
+  }
+  
+  fieldset input{
+    width:unset;
+    vertical-align:middle;
+    margin: 0 8px 0 0;
+  }
+  
+  textarea{
+    min-height: 130px;
+  }
+  
+  button{
+    display:block;
+    width:100%;
+    height:2em;
+    margin: 1em auto;
+    min-width:200px;
+    background-color: #baa41c;
+    border: none;
+    color:#dfdfe2;
+    font-size:1.1rem;
+    border-radius:5px;
+  }
+  button:hover{
+    color:#baa41c;
+    background-color: #dfdfe2;
+  }
+  
+  footer{
+    width:100%;
+    padding-bottom: 1em;
+    font-size:0.7em;  
+  }

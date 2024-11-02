@@ -1,0 +1,80 @@
+*{  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  background-color: #f5f6f7;
+  min-width: 300px;
+  text-align:center;
+}
+
+main{
+  margin:0 3em;
+  padding:2em 0 4em 0;
+  background-color:#d0d0d5;
+  border:2px solid #0a0a23;
+}
+
+@media(max-width: 500px){
+  main{
+    margin:0;
+  }
+}
+
+h1{
+  font-size: 4em;
+  margin-bottom: 0;
+}
+
+p{
+  margin-bottom:3em;
+}
+
+#img-div{
+  background-color: white;
+  padding: 10px;
+  margin:0 20px;
+}
+
+img{
+  max-width:100%;
+  height:auto;
+  display:block;
+  margin:0 auto;
+}
+
+figcaption{
+  margin:15px 0 5px 0;
+}
+
+#headline{
+  margin:50px 20px;
+  font-size: 2rem;
+}
+
+#headline::after{
+  content:" Sources:";
+}
+
+ul{
+  max-width: 100%;
+  line-height:1.6;
+  margin:0 50px 50px 50px;
+  text-align:left;        
+}
+
+li{
+  margin: 10px 0;
+}
+
+blockquote{
+  font-style:italic;
+  width: 60%;
+  margin:0 80px;
+  text-align:left;
+}
+
+section > p:last-child{
+  margin: 100 auto 0 auto;
+  font-size:0.8rem;
+}
