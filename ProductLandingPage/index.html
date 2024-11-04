@@ -2,6 +2,12 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="styles.css">
+        <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+        crossorigin="anonymous"
+        />    <!-- important -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
@@ -13,17 +19,18 @@
             <nav id="nav-bar">
                 <ul>
                     <li>
-                        <a class="nav-link" href="#live">Live</a>
-                    </li>
-                    <li>
                         <a class="nav-link" href="#eat">Eat</a>
                     </li>
                     <li>
-                        <a class="nav-link" href="expense">Expense</a>
+                        <a class="nav-link" href="#live">Live</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#expense">Expense</a>
                     </li>
                 </ul>
             </nav>    
         </header>
+        <div class="header-spacing"></div>
         <section id="hero">
             <h2>My Life in Japan</h2>
             <form action="https://www.freecodecamp.com/email-submit" id="form">
@@ -31,22 +38,85 @@
                 <input type="submit" value="Subscribe" id="submit" class="btn">
             </form>
         </section>
-        <section id="live">
-            <iframe id="video" allowfullscreen src="https://www.youtube.com/watch?v=Jo6jLZTAZT4" frameborder="0"></iframe>
-        </section>
         <section id="eat">
             <div class="grid">
                 <div class="icon">
-                    <i class="fire-icon"></i>
+                    <i class="fa fa-2x fa-warehouse"></i>
                 </div>
                 <div class="desc">
-                    <h2>Shinjuku</h2>
-                    <p>I will be study in a Language School located in Shinjuku</p>
+                    <h2>しんじゅく</h2>
+                    <p>I will be study in a Language School located in Shinjuku. There are loads of street foods in the area.</p>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="icon">
+                    <i class="fa fa-2x fa-store"></i>
+                </div>
+                <div class="desc">
+                    <h2>コンビニ</h2>
+                    <p>Convinient stores are also good choice for a quick meal.</p>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="icon">
+                    <i class="fa fa-2x fa-box"></i>
+                </div>
+                <div class="desc">
+                    <h2>べんとう</h2>
+                    <p>The cheapest way is to cook by oneself. Though might be time consuming</p>
                 </div>
             </div>
             <!-- a photo gallery -->
         </section>
+        <section id="live">
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/Jo6jLZTAZT4?si=UjSOlL5F4mrz-XAX" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
         <section id="expense">
+            <div>
+                <div class="title">Living Expense</div>
+                <h2 class="money">¥120,000</h2>
+                <table>
+                    <tr>
+                        <th>Rent</th>
+                        <td>¥60,000</td>
+                    </tr>
+                    <tr>
+                        <th>Transportation</th>
+                        <td>¥10,000</td>
+                    </tr>
+                    <tr>
+                        <th>Groceries</th>
+                        <td>¥50,000</td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <div class="title">Other Expense</div>
+                <h2 class="money">¥100,000</h2>
+                <table>
+                    <tr>
+                        <th>Tuition Fee</th>
+                        <td>¥70,000</td>
+                    </tr>
+                    <tr>
+                        <th>Travel</th>
+                        <td>¥20,000</td>
+                    </tr>
+                    <tr>
+                        <th>Self Investigation</th>
+                        <td>¥10,000</td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <div class="title">Income</div>
+                <h2 class="money">¥120,000</h2>
+                <ol>
+                    <li><strong>¥1100 ~</strong> per hour</li>
+                    <li><strong>28 hrs</strong> (max) per week</li>
+                </ol>
+                <button class="btn">See Details</button>
+            </div>
             <!-- a table -->
         </section>
         <footer></footer>
@@ -59,14 +129,14 @@
 -Within the #header element, you can see a nav element with a corresponding id="nav-bar"
 -You can see at least three clickable elements inside the nav element, each with the class nav-link
 -When you click a .nav-link button in the nav element, you are taken to the corresponding section of the landing page
-You can watch an embedded product video with id="video"
+-You can watch an embedded product video with id="video"
 -Your landing page has a form element with a corresponding id="form"
 -Within the form, there is an input field with id="email" where you can enter an email address
 -The #email input field should have placeholder text to let users know what the field is for
 -The #email input field uses HTML5 validation to confirm that the entered text is an email address
 -Within the form, there is a submit input with a corresponding id="submit"
 -When you click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit)
-The navbar should always be at the top of the viewport
-Your product landing page should have at least one media query
-Your product landing page should utilize CSS flexbox at least once
+-The navbar should always be at the top of the viewport
+-Your product landing page should have at least one media query
+-Your product landing page should utilize CSS flexbox at least once
 -->

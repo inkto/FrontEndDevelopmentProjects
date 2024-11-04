@@ -1,14 +1,191 @@
-#header div{
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --text-color: cornflowerblue;
+    --theme-color: aliceblue;
+    --header-height: 100px;
+}
+body{
+    font-family: sans-serif;
+    background-color: var(--theme-color);
+}
+#header{
+    position: fixed;    /*important*/
+    top: 0; /*important*/
+    display: flex;  /*important*/
+    justify-content: space-around;
+    width: 100%;
+    height: var(--header-height);
+    align-items: center;
+    border-bottom: 2px dashed;
+    background-color: var(--theme-color);
+}
+#header > div{
     overflow: hidden;
-    width: 40%;
-    height: 80px;
+    width: 60vw;
+    height: 90%;
+    border-radius: 5px;
 }
 #header-img{
-    width: 300px;
-    margin: auto;
-    margin-top: -50px;
+    width: 100%;
+    margin-top: -20%;
+}
+#nav-bar > ul{
+    width: 35vw;
+    display: flex;
+    flex-direction: row;    /*important*/
+    justify-content: space-around;
+    align-items: center;
+}
+#nav-bar li{
+    list-style: none;    /*important*/
+}
+#nav-bar a{
+    display: flex;
+    height: var(--header-height);
+    align-items: center;
+    text-decoration: none;  /*important*/
+    color: black;
+    transition: color 1s;  /*important*/
+    font-size: 1.2rem;
+}
+@media screen and (min-width:800px) {
+    #nav-bar a{
+        font-size: 1.8rem;
+    }
+}
+#nav-bar a:hover{
+    color: var(--text-color);
+    text-decoration: underline dashed;
+    transition: color 0.5s;  /*important*/
+}
+section{
+    display: flex;
+    text-align: center;
+}
+.header-spacing{
+    margin-top: var(--header-height);
+}
+#hero{
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+    padding-top: 20px;
+}
+#hero > h2{
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+#hero input[type='email']{ /*important*/
+    width: 100%;
+    padding: 5px;
+    border-radius: 4px;
+}
+.btn {
+    padding: 0 20px;
+    height: 35px;
+    font-size: 1.2em;
+    font-weight: 900;
+    text-transform: uppercase; /*important*/
+    border: 3px black solid;
+    border-radius: 4px;
+    color: black;
+    background: var(--text-color);
+    cursor: pointer; /*important*/ 
+}
+.btn:hover{
+    color: var(--theme-color);
+    border: 3px var(--text-color) solid;
+}
+#hero input[type='submit']{
+    margin: 15px 0;
+}
+#live{
+    justify-content: center;
+    padding: 40px 0;
+}
+#eat{
+    padding: 60px 0;
+    flex-direction: column;
+}
+.grid{
+    display: flex;
+    margin: 10px;
+}
+.icon{
+    display: inline-block;
+    width: 10%;
+    color: var(--text-color);
+}
+.desc{
+    display: inline-block;
+    width: 90%;
+    text-align: justify;
+    color: var(--text-color);
+}
+.desc p{
+    padding: 5px;
+    line-height: 1.5rem;
 }
 
-.fire-icon::before{
-    content: "\f06d";
+#expense{
+    justify-content: center;
+    padding: 60px 0;
 }
+@media screen and (max-width:650px) {
+    #expense{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+#expense > div{
+    border: 2px solid;
+    border-radius: 5px;
+    margin: 20px;
+    line-height: 2rem;
+    width: 30%;
+    min-width: 300px;
+    padding-bottom: 20px;
+}
+#expense .title{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: var(--text-color);
+    color: var(--theme-color);
+    margin-bottom: 20px;
+}
+#expense .money{
+    font-size: 2rem;
+}
+#expense .money::after{
+    content: " per Mo.";
+    font-size: 1rem;
+}
+#expense table{
+    margin: 20px auto 40px auto;
+    border-collapse: collapse;    /* important */
+}
+#expense tr{
+    border-bottom: 2px solid;
+}
+#expense th{
+    text-align: left;
+    padding-right: 20px;
+}
+#expense ol{
+    list-style-position: outside;
+    width: max-content;
+    margin: 20px auto;
+    text-align: left;
+}
+#expense li{
+    padding-left: 5px;
+}
+
