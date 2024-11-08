@@ -54,12 +54,22 @@ body{
 }
 @media screen and (min-width:800px) {
     #nav-bar a{
-        font-size: 1.8rem;
+        font-size: 1.5rem;
+    }
+    #nav-bar a::before{
+        content: "";
+        width: .2rem;
+        height: 1.2rem;
+        background-color: black;
+        margin-right: .5rem;
+    }
+    #nav-bar a:hover::before{  /* importamt */
+        background-color: var(--text-color);
+        transition: background-color 0.5s;  /*important*/
     }
 }
 #nav-bar a:hover{
     color: var(--text-color);
-    text-decoration: underline dashed;
     transition: color 0.5s;  /*important*/
 }
 section{
@@ -111,6 +121,8 @@ section{
 #eat{
     padding: 60px 0;
     flex-direction: column;
+    max-width: 900px;
+    margin: 0 auto;
 }
 .grid{
     display: flex;
@@ -134,7 +146,10 @@ section{
 
 #expense{
     justify-content: center;
-    padding: 60px 0;
+    padding: 60px 0;    
+    max-width: 900px;
+    flex-wrap: wrap;    /*  important  */
+    margin: 0 auto;
 }
 @media screen and (max-width:650px) {
     #expense{
